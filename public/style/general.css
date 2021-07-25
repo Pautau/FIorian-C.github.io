@@ -552,7 +552,7 @@ li:not(:first-child) {
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Nunito', sans-serif;
-    font-style: oblique 10deg;
+    font-style: oblique;
 }
 
 .exp_description, .education_description{
@@ -582,7 +582,7 @@ li:not(:first-child) {
     color: #ececec;
 }
 
-.exp_skills :not(i:last-child), .education_skills :not(i:last-child){
+.exp_skills:not(i:last-child), .education_skills:not(i:last-child){
     margin-right: 0.5rem;
 }
 
@@ -712,7 +712,7 @@ li:not(:first-child) {
         text-align: center;
         font-size: 1.5rem;
         font-family: 'Nunito', sans-serif;
-        font-style: oblique 10deg;
+        font-style: oblique;
     }
     
     .exp_description p, .education_description p{
