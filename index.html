@@ -20,6 +20,11 @@
     <!-- Aucun service n'a été utilisé pour créer ce site web, tout a été développé par une seule personne (moi-même) -->
     <!-- N'hésitez pas à me contacter si vous avez des conseils, remarques ou si vous êtes intéressés pour un éventuel entretien -->
 
+    <!-- TODO: 
+        - Afficher le nom des langages/frameworks lorsqu'on passe la souris dessus (:hover)
+        - Corriger le problème du responsive design sur mobile
+    -->
+
     <div class="stars stars1"></div>
     <div class="stars stars3"></div>
     <div class="stars stars4"></div>
@@ -27,11 +32,21 @@
         
         <!-- Navigation -->
         <nav>
-            <ul class="accesRapide">
+            <ul class="quick_access">
                 <li><a href="#welcome">Accueil</a></li>
-                <li><a href="#about">Infos</a></li>
+                <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
+                <li><a href="#education">Formations</a></li>
                 <li><a href="#experiences">Expériences</a></li>
+                <li style="display: none"><a href="#projets">Projets</a></li>
+            </ul>
+
+            <ul class="quick_access_small">
+                <li><a href="#welcome"><i class="fas fa-home"></i></a></li>
+                <li><a href="#about"><i class="fas fa-address-card"></i></a></li>
+                <li><a href="#skills"><i class="fas fa-dumbbell"></i></a></li>
+                <li><a href="#education"><i class="fas fa-user-graduate"></i></a></li>
+                <li><a href="#experiences"><i class="fas fa-briefcase"></i></a></li>
                 <li style="display: none"><a href="#projets">Projets</a></li>
             </ul>
         </nav>

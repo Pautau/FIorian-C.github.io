@@ -159,9 +159,18 @@ nav {
     z-index: 3;
 }
 
+.quick_access {
+    display: none;
+}
+
+.quick_access_small i{
+    color: #ececec;
+    font-size: 3rem;
+}
+
 ul {
     width: calc(100% - 10rem);
-    height: 2rem;
+    height: 3rem;
     margin: auto;
     padding: 1rem 5rem;
     display: flex;
@@ -181,7 +190,7 @@ li {
     font-size: 1.5rem;
 }
 
-li a {
+li a{
     position: relative;
     color: #ececec;
     z-index: 1;
@@ -510,7 +519,7 @@ li:not(:first-child) {
     width: 80%;
     padding: 5% 10%;
     max-width: 30rem;
-    height: 65%;
+    height: 60%;
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: 5px;
@@ -526,6 +535,10 @@ li:not(:first-child) {
     border-radius: 0.5rem 0.5rem 0 0;
     border-bottom: solid 1px #011b3c;
     box-shadow: rgba(0, 0, 0, 0.6) 0 0 3px;
+}
+
+.experience:not(:last-of-type), .education:not(:last-of-type) {
+    margin-bottom: 5rem;
 }
 
 .exp_title .education_title{
@@ -635,6 +648,18 @@ li:not(:first-child) {
     .astronaut {
         height: 20rem;
     }
+
+    .quick_access {
+        display: flex;
+    }
+
+    .quick_access_small {
+        display: none;
+    }
+
+    ul {
+        height: 2rem;
+    }
 }
 
 @media screen and (min-width: 700px){
@@ -666,6 +691,7 @@ li:not(:first-child) {
         max-width: 50rem;
         box-shadow: none;
         outline: none;
+        height: 65%;
     }
     
     .experience, .education {
