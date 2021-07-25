@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/style/normalize.css">
+    <link rel="stylesheet" href="public/style/general.css">
+</head>
+
+<body>
+    <!-- Ce site web statique a été réalisé avec HTML CSS et JS-->
+    <!-- L'anglais a été utilisé pour nommer les variables, classes, id et le nom des fichiers -->
+    <!-- Aucun service n'a été utilisé pour créer ce site web, tout a été développé par une seule personne (moi-même) -->
+    <!-- N'hésitez pas à me contacter si vous avez des conseils, remarques ou si vous êtes intéressés pour un éventuel entretien -->
+
+    <div class="stars stars1"></div>
+    <div class="stars stars3"></div>
+    <div class="stars stars4"></div>
+    <div class="container">
+        
+        <!-- Navigation -->
+        <nav>
+            <ul class="accesRapide">
+                <li><a href="#welcome">Accueil</a></li>
+                <li><a href="#about">Infos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li style="display: none"><a href="#projets">Projets</a></li>
+            </ul>
+        </nav>
+
+        <!-- Accueil -->
+        <header id="welcome" class="block">
+            <div class="intro">
+                <h1>Bonjour !</h1>
+                <h2>Je m'appelle Florian :)</h2>
+            </div>
+
+            <div class="portrait gradient">
+                <div class="stars stars1"></div>
+                <div class="stars stars2"></div>
+                <div class="stars stars3"></div>
+                <div class="astro_peace"></div>
+            </div>
+
+            <div class="social_container">
+                <a href="https://www.linkedin.com/in/floriancaron76/" target="blank" class="social_block icons linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social_block icons gradient" onmouseover="displayMail(this)" onmouseout="hideMail(this)" onclick="copyMail()">
+                    <input type="text" class="mail" value="caron.florian7620@gmail.com"></input>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <a href="#about" class="next" data-number="1" onmouseover="sublime(this)" onmouseout="unsublime(this)">
+                <p>À propos</p>
+                <i class="arrow fas fa-chevron-down"></i>
+            </a>
+        </header>
+
+        <main>
+            <section id="about" class="block">
+                <h2 class="title"> À propos </h2>
+
+                <div class="infos">
+                    <p>
+                        <img class="astronaut" src="public/img/astronaut/adoptme.png" alt="peace">
+                        J'ai commencé à développer début 2019 à l'aide d'OpenClassrooms, depuis je me lève en milieu de nuit parce que j'ai trouvé comment résoudre mon bug...
+                    </p>
+
+                    <p>
+                        <img class="astronaut" src="public/img/astronaut/strength.png" alt="strength">
+                        Je trouve que la résolution de bugs est une phase importante de l'apprentissage je ne baisse donc pas les bras aux premiers bugs venus.
+                    </p>
+
+                    <p>
+                        <img class="astronaut" src="public/img/astronaut/coffee.png" alt="coffee">
+                        J'aime passer du temps à développer une application et la voir prendre vie, je pratique la veille informatique afin d'être toujours au courant des tendances.
+                    </p>
+                </div>
+
+                <a href="#skills" class="next" data-number="2" onmouseover="sublime(this)" onmouseout="unsublime(this)">
+                    <p>Compétences</p>
+                    <i class="arrow fas fa-chevron-down"></i>
+                </a>
+            </section>
+
+            <section id="skills" class="block">
+                <div class="stars stars3"></div>
+                <div class="stars stars4"></div>
+                <h2 class="title"> Compétences </h2>
+
+                <div class="skill_learning" onmouseover="expandLearning()" onmouseleave="shrinkLearning()">
+                    <button class="skill_block icons react" data-number="0">
+                        <i class="fab fa-react logo"></i>
+                        <i class="fas fa-user-astronaut mastery"></i>
+                    </button>
+                    <div class="learning_info">
+                        <p> Apprentissage personnel</p>
+                    </div>
+                </div>
+
+                <div class="skill_container">
+                    <button class="skill_block icons html" data-number="1" data-mastery="1" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-html5 logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons linkedin" data-number="2" data-mastery="1" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-css3-alt logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons js" data-number="3" data-mastery="2" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-js-square logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons php" data-number="7" data-mastery="2" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-php logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons sql" data-number="9" data-mastery="2" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fas fa-database logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons symfony" data-number="8" data-mastery="3" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-symfony logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons bootstrap" data-number="4" data-mastery="3" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-bootstrap logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons python" data-number="5" data-mastery="3" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-python logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                    <button class="skill_block icons java" data-number="6" data-mastery="3" onmouseover="starGrade(this)" onmouseleave="showLogo(this)">
+                        <i class="fab fa-java logo"></i>
+                        <i class="fas fa-meteor mastery"></i>
+                    </button>
+                </div>
+
+                <a href="#experiences" class="next" data-number="3" onmouseover="sublime(this)" onmouseout="unsublime(this)">
+                    <p>Expériences</p>
+                    <i class="arrow fas fa-chevron-down"></i>
+                </a>
+            </section>
+
+            <section id="experiences" class="block">
+                <h2 class="title"> Expériences </h2>
+
+                <div class="experience_container">
+                    <div class="experience">
+                        <p class="exp_title">Développeur Web et Web Mobile</p>
+                        <p class="exp_subtitle"> 01/09/2020 au 30/04/2021 </p>
+                        <div class="exp_description">
+                            <p><i class="far fa-clock"></i> 8 mois</p>
+                            <p><i class="far fa-building"></i> AFPA</p>
+                            <p><i class="far fa-clipboard"></i> Bac+2</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Créteil</p>
+                        </div>
+                        <div class="exp_skills">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-bootstrap"></i>
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-php"></i>
+                            <i class="fas fa-database"></i>
+                            <i class="fab fa-symfony"></i>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <p class="exp_title">Développeur d'Applications</p>
+                        <p class="exp_subtitle"> 27/01/2020 au 31/01/2020 </p>
+                        <p class="exp_subtitle"> 17/05/2020 au 31/05/2020 </p>
+                        <div class="exp_description">
+                            <p><i class="far fa-clock"></i> 3 semaines</p>
+                            <p><i class="far fa-building"></i> Fremach</p>
+                            <p><i class="far fa-clipboard"></i> Stage</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Dieppe</p>
+                        </div>
+                        <div class="exp_skills">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-php"></i>
+                            <i class="fas fa-database"></i>
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <p class="exp_title">POEC PHP POO</p>
+                        <p class="exp_subtitle"> 09/12/2019 à 10/03/2020 </p>
+                        <div class="exp_description">
+                            <p><i class="far fa-clock"></i> 3 mois</p>
+                            <p><i class="far fa-building"></i> ENI</p>
+                            <p><i class="far fa-clipboard"></i> Mise à niveau</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Distanciel</p>
+                        </div>
+                        <div class="exp_skills">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-php"></i>
+                            <i class="fab fa-java"></i>
+                            <i class="fas fa-database"></i>
+                            <i class="fab fa-symfony" aria-label="texte de l'infobulle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="#projets" class="next" data-number="3" onmouseover="sublime(this)" onmouseout="unsublime(this)">
+                    <p>Projets</p>
+                    <i class="arrow fas fa-chevron-down"></i>
+                </a> -->
+            </section>
+
+            <!-- <section id="projets" class="block">
+                <h2 class="title"> Projets </h2>
+            </section> -->
+        </main>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/ba6c5d3eb5.js" crossorigin="anonymous"></script>
+    <script src="public/scripts/scripts.js"></script>
+</body>
+
+</html>
