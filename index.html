@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=320, initial-scale=1">
-    <title>Curriculum Vitae</title>
+    <title>CV - Caron Florian</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +23,12 @@
 
     <!-- TODO: 
         - Afficher le nom des langages/frameworks lorsqu'on passe la souris dessus (:hover)
+        - Chercher un moyen pour le scrolling de Chrome qui n'est pas agréable
         - Faire la partie "projets"
+        - Séparer la compétence en anglais
+        - Faire un favicon astronaute 16px x 16px
+        - Montrer dans quelles circonstances les compétences ont été mises en oeuvre (exemples)
+        - Mail = passage souris -> affichage icone "copie", clique souris -> une validation comme quoi bien copié
     -->
 
     <div class="stars stars1"></div>
@@ -45,7 +50,7 @@
             <ul class="quick_access_small">
                 <li><a href="#welcome"><i class="fas fa-home"></i></a></li>
                 <li><a href="#about"><i class="fas fa-address-card"></i></a></li>
-                <li><a href="#skills"><i class="fas fa-dumbbell"></i></a></li>
+                <li><a href="#skills"><i class="fas fa-laptop-code"></i></a></li>
                 <li><a href="#education"><i class="fas fa-user-graduate"></i></a></li>
                 <li><a href="#experiences"><i class="fas fa-briefcase"></i></a></li>
                 <li style="display: none"><a href="#projets">Projets</a></li>
@@ -67,8 +72,8 @@
             </div>
 
             <div class="social_container">
-                <a href="https://www.linkedin.com/in/floriancaron76/" target="blank" class="social_block icons linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <div class="social_block icons gradient" onmouseover="displayMail(this)" onmouseout="hideMail(this)" onclick="copyMail()">
+                <a href="https://www.linkedin.com/in/floriancaron76/" target="blank" class="social_block icons gradient"><i class="fab fa-linkedin-in"></i></a>
+                <div class="social_block icons gradient" onclick="copyMail()">
                     <input type="text" class="mail" value="caron.florian7620pro@gmail.com">
                     <i class="fas fa-envelope"></i>
                 </div>

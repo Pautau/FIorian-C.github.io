@@ -166,7 +166,11 @@ nav {
 
 .quick_access_small i{
     color: #ececec;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.quick_access_small :not(:last-child){
+    margin-right: 15px;
 }
 
 ul {
@@ -368,7 +372,8 @@ li:not(:first-child) {
 .infos p{
     display: flex;
     align-items: center;
-    text-align: justify;
+    text-align: start;
+    letter-spacing: 0.4px;
     margin-bottom: 4rem;
 }
 
@@ -437,8 +442,9 @@ li:not(:first-child) {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 80%;
-    max-width: 34rem;
+    max-width: 36rem;
     max-height: 24rem;
+    padding: 0.5rem 1rem;
     overflow-y: auto;
     justify-content: space-between;
 }
