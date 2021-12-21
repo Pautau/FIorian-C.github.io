@@ -1,4 +1,4 @@
-# Florian-Caron.github.io
+# FIorian-C.github.io
 
 Portfolio développé par mes soins à l'aide des langages HTML, CSS et JavaScript.
 
